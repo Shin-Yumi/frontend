@@ -1,0 +1,1297 @@
+@charset "utf-8";
+
+
+/*layout*/
+#contents {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+
+#contents>section {
+    height: 100vh;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/mainLow.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#section1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+#section2 {
+    height: 100vh;
+    background-color: #FDF7ED;
+    position: relative;
+}
+
+#section3 {
+    width: 100vw; 
+    height: 100vh;
+    background-image: url(../img/siteWorkLow.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#section4 {
+    background-color: #AC907B;
+    position: relative;
+}
+
+#section5 {
+    width: 100vw; 
+    height: 100vh;
+    background-image: url(../img/cssAniImg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/*
+#section6 {
+    background-color: #FDF7ED;
+    position: relative;
+}
+
+
+
+
+/*header*/
+
+#header {
+    position:fixed;
+    left: 0; top: 0;
+    width: 80px;
+    height: 100vh;
+    border-right: solid 1px #fff;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+#header .menu {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    height: 9vh;
+}
+#header .menu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 4.4vh 22px 10px;
+    position: relative;
+}
+#header .menu span::before {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+#header .menu span::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+}
+#header .logo {
+    width: 100%;
+}
+#header .logo span {
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-right: 27px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+#header .memo {
+    width: 100%;
+    border-top: 1px solid #fff;
+    height: 8vh;
+}
+#header .cate {
+    position: absolute;
+    right: -30px; top: 0;
+    width: 30px; height: 100vh;
+    border-right: solid 1px #fff;
+}
+#header .cate .bar{
+    width: 100%;
+    height: 16.66vh;
+    border-bottom: solid 1px #fff;
+}
+#header .cate .bar:last-child {
+    border:0px;
+}
+#header .cate .bar a{
+    display: block;
+    width: 100%; height: 100%;
+}
+
+/* sec1 */
+.sec1 {
+    display: flex;
+    height: 100vh;
+}
+
+.sec1 h1 {
+    position: absolute;
+    left: 13vw;
+    bottom: 3vw;
+    font-size: 8vw;
+    z-index: 1000;
+    color: #fff;
+    font-family: 'Sulphur Point', sans-serif;
+    margin: 0;
+}
+
+.sec1 h1 strong {
+    display: block;
+    font-family: 'Sulphur Point';
+    font-weight: bold;
+}
+
+.sec1 h1 em {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.sec1 .arrow {
+    position: absolute;
+    right: 60px; top: 60px;
+    z-index: 10000;
+}
+.sec1 .arrow a{
+    display: block;
+    width: 100%; height: 100%;
+}
+
+/*section1*/
+
+.sec2 {
+    position: relative;
+    display: flex;
+
+}
+
+.sec2 .title {
+    width: 450px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e6e0d6;
+    position: relative;
+}
+.sec2 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #e6e0d6;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec2 .title .num {
+    position: absolute;
+    left: -5vw;
+    top: -3vw;
+    color: #BDA680;
+    opacity: 0.1;
+    font-size: 68vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec2 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #444558;
+}
+.sec2 .desc {
+    height: 100vh;
+    padding-left: 40vh;
+    display: flex;
+    align-items: flex-end;
+}
+.sec2 .desc:nth-child(3) {
+    align-items:flex-start;
+}
+.sec2 .desc:nth-child(4) {
+    align-items:center;
+}
+
+.sec2 .desc .img {
+    width: 50vh;
+    margin-right: 2vw;
+}
+.sec2 .desc .img img {
+    width: 100%;
+    vertical-align: top;
+}
+.sec2 .desc .txt {
+    width: 50vh;
+    height: 62vh;
+    padding-left: 2vh;
+}
+.sec2 .desc:nth-child(3) .txt {
+    padding-top: 54vh;
+}
+.sec2 .desc .txt h3 {
+    font-family: "Saol";
+    font-size: 80px;
+    line-height: 1;
+    color: #B22C35;
+    font-weight: normal;
+    margin-top: -1px;
+    margin-bottom: 3vh;
+}
+.sec2 .desc .txt p {
+    font-family: 'GowunBatang-Regular';
+}
+.sec2 .skills {
+    height: 100vh;
+    padding-left: 60vh;
+    display: flex;
+    align-items: center;
+}
+.sec2 .skills .list {
+    width: 70vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center
+}
+.sec2 .skills .list h3 {
+    font-family: "Saol";
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 1;
+    color: #B22C35;
+    font-weight: normal;
+}
+.sec2 .skills .list ul{
+    margin-top: 8vh;
+}
+.sec2 .skills .list ul li {
+    overflow: hidden;
+    line-height: 4vh;
+    font-family: 'GowunBatang-Regular';
+}
+.list ul li .ability {
+    float: left;
+    margin-bottom: 1vh;
+}
+.list ul li .ability h4 {
+    font-weight: 100;
+    color: #444558;
+    font-size: 2vh;
+}
+.list ul li .ability .value {
+    width: 30vh; height: 0.3vh;
+    background-color: #AFA595;
+    border-radius: 2.5rem;
+}
+.list ul li:nth-child(2) .value,
+.list ul li:nth-child(5) .value,
+.list ul li:nth-child(6) .value{
+    width: 25vh;
+    margin-right: 5vh;
+}
+.list ul li .percent {
+    float: left;
+    padding-left: 10vh;
+
+}
+.list ul li .percent p {
+    color:#A9A49A;
+    font-size: 1.5vh;
+    padding-top: 0.5vh;
+}
+
+.sec2 .skills .skillImg {
+    width: 80vh;
+    margin-right: 2vw;
+}
+.sec2 .skills .skillImg img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.secArrow {
+    padding: 38vh 20vh 0 40vh;;
+    display: flex;
+    align-items: center;
+
+}
+.secArrow a{
+    display: block;
+    width: 100%; height: 100%;
+}
+/*section2*/
+
+
+.sec3 {
+    display: flex;
+    height: 100vh;
+}
+
+.sec3 h2 {
+    position: absolute;
+    left: 13vw;
+    bottom: 3vw;
+    font-size: 8vw;
+    z-index: 1000;
+    color: #fff;
+    font-family: 'Sulphur Point', sans-serif;
+    margin: 0;
+}
+
+.sec3 h2 em {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/*section3*/
+
+.sec4 {
+    position: relative;
+    display: flex;
+    background-image: url(../img/workSiteLow.png);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: center;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.sec4 .title {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #be9982;
+    position: relative;
+}
+.sec4 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #be9982;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec4 .title .num {
+    position: absolute;
+    left: -5vw;
+    top: -3vw;
+    color: #513421;
+    opacity: 0.1;
+    font-size: 68vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec4 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #fff;
+}
+.sec4 .siteWrap {
+    display: flex;
+    overflow: hidden;
+
+}
+.siteWrap .site { 
+    float: left;
+    width: 200vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.siteWrap .site .s1 {}
+.siteWrap .site .imgCont {
+    width: 100vh; height: 70vh;
+    overflow: hidden;
+}
+.siteWrap .site .imgCont > div {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.siteWrap .site .imgCont img {
+    width: 100%;
+}
+.siteWrap .site .imgCont .c1 {
+    display: block;
+    background-image: url(../img/webstandard.jpg);
+    background-size: cover;
+    background-blend-mode : lighten;
+    background-color: #513421;
+}
+.siteWrap .site.s2 .imgCont .c1 {
+    display: block;
+    background-image: url(../img/webresponsive.jpg);
+    background-size: cover;
+    background-blend-mode : lighten;
+    background-color: #513421;
+}
+.siteWrap .site.s3 .imgCont .c1 {
+    display: block;
+    background-image: url(../img/megabox.jpg);
+    background-size: cover;
+    background-blend-mode : lighten;
+    background-color: #513421;
+}
+
+.siteWrap .site .imgCont .c2 {}
+.siteWrap .site .imgCont .c3 {}
+.siteWrap .site .imgCont .c4 {}
+.siteWrap .site .imgCont .c5 {}
+
+.siteWrap .site .menu {
+    position: absolute;
+    left: 50%; bottom: 10vh;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.siteWrap .site .menu > div {
+    border: solid 1px #fff;
+    width: 100px; height: 20px;
+    margin-left: -1px;
+}
+.siteWrap .site .menu > div:nth-child(1){
+    background-color: #fff;
+}
+
+/*section4*/
+
+.sec5 {
+    display: flex;
+    height: 100vh;
+}
+
+.sec5 h2 {
+    position: absolute;
+    left: 13vw;
+    bottom: 3vw;
+    font-size: 8vw;
+    z-index: 1000;
+    color: #fff;
+    font-family: 'Sulphur Point', sans-serif;
+    margin: 0;
+}
+
+.sec5 h2 em {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/*section5*/
+
+/*
+.sec6 {
+    position: relative;
+    display: flex;
+}
+
+.sec6 .title {
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #be9982;
+    position: relative;
+}
+.sec6 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #be9982;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec6 .title .num {
+    position: absolute;
+    left: -8vw;
+    top: -6vw;
+    color: #444558;
+    opacity: 0.1;
+    font-size: 58vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec6 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #444558;
+}
+
+
+
+/*
+
+#section4 .coverImg {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/cssAniImg.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+}
+.sec4 {
+    position: relative;
+    display: flex;   
+}
+
+.sec4 .title {
+    width: 465px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e6e0d6;
+    position: relative;
+    left: 0; top: 0;
+}
+.sec4 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #e6e0d6;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec4 .title .num {
+    position: absolute;
+    left: -8px;
+    top: -6vw;
+    color: #444558;
+    opacity: 0.1;
+    font-size: 58vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec4 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #444558;
+}
+
+.sec4 .cssList {
+    position: relative;
+    height: 100vh;
+    padding-top: 14vh;
+    padding-left: 50vh;
+    overflow: hidden;
+}
+.sec4 .cssList .bgTxt {
+    position: absolute;
+    left: 25vh;
+    bottom: 8vh;
+    font-family: 'saol';
+    font-size: 40vh;
+    color:#FDF7ED;
+    text-shadow: -1px 0 #AC907B, 0 1px #AC907B, 1px 0 #AC907B, 0 -1px #AC907B;
+}
+.sec4 .cssList .css {
+    align-items: center;
+    float: left;
+    display: none;
+}
+.sec4 .cssList li.on {
+    display: block;
+}
+.sec4 .cssList li .tabBtn {
+    display: flex;
+    align-items:baseline;
+    padding-left: 12vh;
+}
+.sec4 .cssList li .tabBtn h3 {
+    color:#B22C35;
+    font-size: 5vh;
+    font-family: 'saol';
+    font-weight: 300;
+}
+.sec4 .cssList li .tabBtn ul {
+    display: flex;
+    padding-left: 30vh;
+}
+.sec4 .cssList li .tabBtn ul li {
+    margin-right: 4vh;
+}
+.sec4 .cssList li .tabBtn ul li a {
+    display: block;
+    font-family: 'saol';
+    color: #000;
+    font-size: 3vh;
+}
+.sec4 .cssList li .tabBtn ul li:hover a{
+    text-decoration: underline;
+    color:#B22C35;
+}
+.sec4 .cssList li .list {
+    position: relative;
+    margin-top: 3vh;
+    display: flex;
+}
+.list .img{
+    width: 50vh; height: 50vh;
+    border: solid 1px #000;
+    background-color: #c4c4c4;
+}
+.list .cssInfo {
+    margin-left: -1px;
+    width: 50vh; height: 50vh;
+
+}
+.list .cssInfo .name {
+    border: solid 1px #000;
+    text-align: center;
+    margin-bottom:-1px;
+}
+.list .cssInfo .name h4 {
+    padding-top: 6vh;
+    padding-bottom: 2vh;
+    color: #B22C35;
+    font-family: 'saol';
+    text-transform: uppercase;
+    font-size: 7vh;
+    font-weight: 300;
+}
+
+.list .cssInfo .info {
+    border: solid 1px #000;
+    text-align: left;
+    padding-left: 8vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+.list .cssInfo .info h5 {
+    font-family: 'GowunBatang-Regular';
+    font-weight: 600;
+    color: #000;
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+}
+.list .cssInfo .info p {
+    font-family: 'GowunBatang-Regular';
+    text-transform: uppercase;
+    color:#000;
+    font-size: 2vh;
+    margin-bottom: 5vh;
+}
+.list .cssInfo .info .button {
+    background-color: #AC907B;
+    width: 15vh;
+    height: 4vh;
+    text-align: center;
+    line-height: 3.8vh;
+    letter-spacing: 0.4vh;
+}
+.list .cssInfo .info .button a {
+    display: block;
+    font-size: 1.5vh;
+    font-family: 'saol';
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.sec4 .cssList li .dragWrap {
+    position: relative;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec4 .cssList li .dragWrap .dragBtn {
+    position: absolute;
+    top: -3.5vh;; left: 18vh;;
+    z-index: 9999;
+}
+
+.sec4 .cssList li .dragWrap .dragBtn a {
+    display: block;
+    width: 100%; height: 100%;
+}
+.sec4 .cssList li .dragWrap .dragBar {
+    position: relative;
+    width: 80vh; height: 3vh;
+    border: solid 1px #000;
+}
+.sec4 .cssList li .dragWrap .dragBar span {
+    display: block;
+    position: absolute;
+    top: 50%; left: 0;
+    width: 20px;
+    height: 20px;
+    background: #c2152f;
+    display: block;
+    transform: translate(-8px,-50%) rotate(45deg);
+}
+.sec4 .cssList li .dragWrap .dragBar span:nth-last-child(2) {
+    left: 25vh;
+}
+.sec4 .cssList li .dragWrap .dragBar span:nth-last-child(3) {
+    left: 50vh;
+}
+.sec4 .cssList li .dragWrap .dragBar span:nth-last-child(4) {
+    left: 80vh;
+}
+
+
+/*section4*/
+
+/*
+
+#section5 .coverImg {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/javaSImg.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+}
+.sec5 {
+    position: relative;
+    display: flex;   
+}
+
+.sec5 .title {
+    width: 466px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e6e0d6;
+    position: relative;
+    left: 0; top: 0;
+}
+.sec5 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #e6e0d6;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec5 .title .num {
+    position: absolute;
+    left: -8px;
+    top: -6vw;
+    color: #444558;
+    opacity: 0.1;
+    font-size: 58vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec5 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #444558;
+}
+
+/*section5*/
+
+/*
+#section6 .coverImg {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/contactme.jpg);
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+}
+.sec6 {
+    position: relative;
+    display: flex;   
+}
+
+.sec6 .title {
+    width: 466px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #e6e0d6;
+    position: relative;
+    left: 0; top: 0;
+}
+.sec6 .title::after {
+    content: '';
+    width: 1px;
+    height: 100vh;
+    background: #e6e0d6;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.sec6 .title .num {
+    position: absolute;
+    left: -8px;
+    top: -6vw;
+    color: #444558;
+    opacity: 0.1;
+    font-size: 58vh;
+    line-height: 1;
+    font-family: "Saol";
+}
+
+.sec6 .title h2 {
+    font-family: 'Sulphur Point';
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 80px;
+    color: #444558;
+}
+
+.sec6 .profile {
+    position: relative;
+    display: flex;
+    padding-left: 50vh;  
+    height: 100vh;
+}
+
+.sec6 .profile .proImg{
+    width: 70vh;
+}
+.sec6 .profile .proImg img {
+    width: 100%;
+}
+.sec6 .profile .proText {    
+
+}
+.sec6 .profile .proText li {
+    font-family: 'saol display';
+    text-transform: uppercase;
+    color: #AC907B;
+    font-size: 1vw;
+    letter-spacing: 0.05vw;
+
+}
+.sec6 .proText li em {
+    font-family: 'GowunBatang-Regular';
+    font-style: normal;
+    
+}
+
+
+/*
+.main04 {
+    position: absolute;
+    left: 100vw; top: 0;
+    float: left;
+}
+
+.main04 span {
+    display: block;
+    line-height: 0.6;
+    opacity: 0.1;
+    color: #614D3E;
+    font-family: 'saol display';
+    font-size: 25vw;
+}
+
+.main04 .title {
+    width: 14.5vw;
+    height: 100vh;
+    border-right: solid 1px rgba(196,196,196,0.3);
+    padding-top: 12vw;
+    padding-left: 3.8vw
+}
+
+.main04 .title h2 {
+    width: 100%;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 5vw;
+    font-family: 'Sulphur Point';
+    color: #444558;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.main04 .title .cate {
+    position: absolute;
+    right: -8px; top: 0;
+    width: 30px; height: 100vh;
+    border-right:solid 1px rgba(196,196,196,0.3);
+}
+.scriptList {
+    overflow: hidden;
+    position: absolute;
+    left: 150vw; top: 50vh;
+    width: 100vw; height: 100vh;
+}
+.scriptList li {
+    position: relative;
+    float: left;
+    font-family: 'saol display';
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);   
+}
+
+.scriptList li h3 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 200;
+    color:#fff;
+}
+.scriptList li .scriptBtn {
+    position: absolute;
+    top: 0; left: 0;
+    width: 4vw;
+    height: 2vw;
+    border-radius: 2.5rem;
+    transform: rotate(90deg);
+    border: solid 1px #fff;
+    text-align: center;
+    line-height: 4;
+}
+.scriptList li .scriptBtn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    writing-mode: vertical-lr;
+    transform: rotate(-90deg)
+    
+}
+#section5 .arrow {
+    position: absolute;
+    right: 8vw; top: 38vh;
+    z-index: 10000;
+}
+#section5 .arrow a{
+    display: block;
+    width: 100%; height: 100%;
+}
+/* section5 */
+/*
+.main05 {
+    position: absolute;
+    left: 100vw; top: 0;
+    float: left;
+}
+
+.main05 span {
+    display: block;
+    line-height: 0.6;
+    opacity: 0.1;
+    color: #614D3E;
+    font-family: 'saol display';
+    font-size: 25vw;
+}
+
+.main05 .title {
+    width: 14.5vw;
+    height: 100vh;
+    border-right: solid 1px rgba(178,143,120,0.1);
+    padding-top: 5vw;
+    padding-left: 3.8vw
+}
+
+.main05 .title h2 {
+    width: 100%;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    font-size: 5vw;
+    font-family: 'Sulphur Point';
+    color: #444558;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.main05 .title .cate {
+    position: absolute;
+    right: -8px; top: 0;
+    width: 30px; height: 100vh;
+    border-right: solid 1px rgba(178,143,120,0.1);
+}
+.bg{
+    position: absolute;
+    left: 133vw; top: -11vh;
+    width: 50vw; height: 100vh;
+    background-image: url(../img/profieBg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.front {
+    z-index: 9999;
+    position: absolute;
+    left: 164vw;
+    top: 131px;
+    width: 40vw;
+    height: 100vh;
+    background-image: url(../img/leafC.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+.profile {
+    position: absolute;
+    left: 157vw;
+    top: -50px;
+    overflow: hidden;
+}
+
+.proImg{
+    width: 27vw; height: 141vh;
+    background-image: url(../img/profile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+}
+.proText {    
+    float: left;
+    margin-left: 15vw;
+    padding-top: 18vw;
+    line-height: 3.4vw;
+    font-size: 1vw;
+}
+.proText li {
+    font-family: 'saol display';
+    text-transform: uppercase;
+    color: #AC907B;
+    font-size: 1vw;
+    letter-spacing: 0.05vw;
+
+}
+.proText li em {
+    font-family: 'GowunBatang-Regular';
+    font-style: normal;
+    
+}
+.midText {
+    position: absolute;
+    left: 230vw;
+    top: 0vh;
+    width: 100vw;
+    height: 100vh;
+}
+.txtWrap {
+    width: 100%; height: 100%;
+    position: relative;
+    padding-top: 31vh;
+}
+.circle01 {
+    position: absolute;
+    left: 13vw; top: 10vh;
+    width: 13vw; height: 13vw;
+    background-image: url(../img/circle01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.circle02 {
+    position: absolute;
+    left: 72vw; top: 4vw;
+    width: 12vw; height: 10vw;
+    background-image: url(../img/circle02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.circle03 {
+    position: absolute;
+    left: 30vw; top: 28vw;
+    width: 14vw; height: 12vw;
+    background-image: url(../img/circle03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.midText p {
+    text-transform: uppercase;
+    letter-spacing: 0.3vw;
+    line-height: 6vw;
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'saol display';
+    color: #AC907B;
+}
+.txtWrap .arrow {
+    position: absolute;
+    left: 72vw;
+    top: 62vh;
+}
+
+.contact {
+    position: absolute;
+    left: 357vw;
+    top: 22vh;
+    font-family: 'saol display';
+    font-size: 1vw;
+    color:#AC907B;
+}
+.homeBtn {
+    position: absolute;
+    left: 340vw;
+    top: 5vw;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    border: solid 1px #AC907B; 
+    text-align: center;
+    line-height: 5.5vw;
+}
+.homeBtn a {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'saol display';
+    font-size: 1vw;
+    color:#AC907B;
+}
+
+.contact .email {
+    width: 40vw;
+    height: 9vh;
+    border: solid 1px #AC907B;
+    margin-bottom: 2vw;
+    padding: 0.1vw 0.3vw;
+    box-sizing: border-box;
+}
+.contact .messege {
+    width: 40vw;
+    height: 40vh;
+    border: solid 1px #AC907B;
+    padding: 0.1vw 0.3vw;
+    box-sizing: border-box;
+}
+.contact .button {
+    margin-left: 32vw;
+    background-color: #AC907B;
+    width: 8vw; height: 5vh;
+    text-align: center;
+    margin-top: 2vw;
+    line-height: 2;
+}
+.contact .button a {
+    display: block;
+    font-size: 1.1vw;
+    font-family: 'saol display';
+    color:#fff;
+}
+.footer {
+    position: absolute;
+    left: 420vw; top: 0;
+    overflow: hidden;
+}
+
+.footer .sns {
+    padding-top: 1vw;
+    padding-right: 1vw;
+    writing-mode: vertical-lr;
+    overflow: hidden;
+    float: left;
+}
+.footer .sns li {
+    float: left;
+    margin-bottom: 2vw;
+    
+}
+.footer .sns a {
+    display: block;
+    font-size: 1vw;
+    color: #820000;
+    font-family: 'saol display';
+}
+.footer .info {
+    float: left;
+    width: 30vw; height: 100vh;
+    border-left: solid 1px rgba(172, 144, 123, 0.2);
+    writing-mode: vertical-lr;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+}
+.footer .info ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.4vw;
+    height: 100vh;
+    border-right: solid 1px rgba(172, 144, 123, 0.2);
+    opacity: 0.2;
+}
+.footer .info p {
+    float: left;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+    color: #AC907B;
+    font-family: 'saol display';
+    padding-left: 1vw;
+}
+.footer .info p:nth-child(1) {
+    padding-top: 25vw;
+}
+.footer .info p:nth-child(2) {
+    margin-bottom: 0;
+}
+

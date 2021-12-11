@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Saol"; 
+    src: url("http//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot"); 
+    src: url("http//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff2") format("woff2"), 
+    url("http//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.woff") format("woff"), 
+    url("http//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.ttf") format("truetype"), 
+    url("http//db.onlinewebfonts.com/t/4c4c08af466e9ad071b6d69cf44093df.svg#Saol Display Regular") format("svg"); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+em {
+    font-style: normal;
+}
